@@ -1,0 +1,16 @@
+bandit
+black
+flake8
+instructor
+invoke
+isort
+lxml
+lxml-stubs
+mypy
+openai
+pydantic
+python-dotenv
+uuid6
+shortuuid
+xmltodict
+types-xmltodict
