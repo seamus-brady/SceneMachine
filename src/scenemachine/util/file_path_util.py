@@ -10,6 +10,8 @@
 import os
 from pathlib import Path
 
+from src.scenemachine.exceptions.config_exception import ConfigException
+
 
 # a class for handling file paths in the app
 class FilePathUtil:
@@ -41,5 +43,9 @@ class FilePathUtil:
                 content = file.read()
             return content
         except Exception as e:
-            print(f"Error reading file {file_path}: {e}")
-            return ""
+            raise ConfigException(f"Error reading file {file_path}: {e}")
+
+    @staticmethod
+    def prompt_folder_path() -> str:
+        repo_root: str = FilePathUtil.repo_root_path()
+        return os.path.join(repo_root, "src", "config", "prompts")
