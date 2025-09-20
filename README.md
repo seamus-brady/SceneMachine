@@ -2,7 +2,10 @@
 
 # SceneMachine
 
-SceneMachine is a Python toolkit for generating, solving, and experimenting with classic cosy crime puzzles. It leverages large language models (LLMs) to create intricate, logic-based mysteries, and provides utilities for both puzzle generation and solution.
+
+SceneMachine is a Python prototype for generating, solving, and experimenting with classic cosy-style crime puzzles. It leverages large language models (LLMs) to create logic-based mysteries, and provides utilities for both puzzle generation and solution.
+ 
+**Disclaimer:** This is a prototype, built for a bit of fun. There is absolutely no warranty, and the quality of the generated puzzles varies from "OK" to "absolutely terrible". Enjoy at your own risk!
 
 ---
 
@@ -78,11 +81,10 @@ invoke isort
 
 ### Generating a Puzzle
 
-Puzzle generation is typically handled via a task (see `tasks.py`). If a `generate-puzzle` task is present, run:
-```sh
-invoke generate-puzzle
-```
-Check `tasks.py` for available generation or utility tasks.
+
+To see how to generate a puzzle, look at the unit tests in `src/test/test_crime_puzzle_generator.py`. This file demonstrates how to invoke the puzzle generation logic programmatically.
+
+There is no command-line or invoke task for puzzle generation at this time.
 
 ---
 
@@ -104,16 +106,6 @@ Unit tests are located in the `src/test/` directory. You can run all tests with:
 
 ```sh
 invoke test
-```
-
-Or directly with unittest or pytest:
-
-```sh
-python -m unittest discover -v src/test/
-```
-or
-```sh
-pytest src/test/
 ```
 
 ---
