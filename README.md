@@ -19,6 +19,21 @@ SceneMachine is a Python prototype for generating, solving, and experimenting wi
 
 ---
 
+
+## OpenAI API Setup
+
+To use OpenAI (or other LLM providers), you will need to provide an API key. The recommended way is to create a `.env` file in the project root with your credentials:
+
+```
+OPENAI_API_KEY=sk-...
+```
+
+Replace `sk-...` with your actual OpenAI API key. The application will load this automatically if you have a `.env` file present.
+
+If you use a different provider, check the code or configuration for the required environment variable names.
+
+---
+
 ## Installation
 
 1. **Clone the repository:**
