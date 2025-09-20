@@ -5,7 +5,7 @@
 
 SceneMachine is a Python prototype for generating, solving, and experimenting with classic cosy-style crime puzzles. It leverages large language models (LLMs) to create logic-based mysteries, and provides utilities for both puzzle generation and solution.
  
-**Disclaimer:** This is a prototype, built for a bit of fun. There is absolutely no warranty, and the quality of the generated puzzles varies from "OK" to "absolutely terrible". Enjoy at your own risk!
+**Disclaimer:** This is a prototype, built for a bit of fun. There is absolutely no warranty, and the quality of the generated puzzles varies from OK to absolutely terrible :) Enjoy at your own risk!
 
 ---
 
